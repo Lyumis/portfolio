@@ -1,0 +1,1025 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Отступ сверху чтобы учитывать фиксированный хедер */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0B111A;
+  color: #39ACFF;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Шрифты */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Хедер для мобильных */
+.header {
+  height: auto;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.header-border {
+  height: 15px;
+  width: 100%;
+  border-top: 2px solid #39ACFF;
+  border-bottom: 1px solid #000;
+  margin-top: 10px;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #39ACFF;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.logo a:hover {
+  color: #8FD0FF;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #39ACFF;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #8FD0FF;
+}
+
+/* Герой секция для мобильных */
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.hero {
+  padding: 30px 15px;
+  min-height: 60vh;
+  height: auto;
+  background: url('../img/bg-section-1.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #39ACFF;
+}
+
+.hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.name-text {
+  font-size: 42px; 
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.description-text {
+  font-size: 14px;
+  color: #65BFFF;
+}
+
+/* Секция About  */
+.about {
+  min-height: auto;
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.about .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.about-border {
+  height: 15px;
+  width: 100%;
+  border-top: 2px solid #39ACFF;
+  border-bottom: 2px solid #39ACFF;
+  margin: 20px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #39ACFF;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.about-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.about-image {
+  height: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  background-color: #8FD0FF;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}
+
+
+/* Секция Illustrations*/
+.illustrations {
+  padding: 40px 0;
+  width: 100%;
+  background: #0B111A;
+  overflow: hidden;
+}
+
+.illustrations h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #39ACFF;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  cursor: grab;
+}
+
+.carousel-container.grabbing {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.carousel-slide {
+  flex: 0 0 280px;
+  height: 280px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: translateZ(0);
+}
+
+.carousel-slide:hover {
+  transform: translateY(-10px);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Секция Опыт для мобильных */
+.experience {
+  padding: 40px 0;
+  background: #000000;
+}
+
+.experience h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #39ACFF;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.experience-left {
+  width: 36px;
+  height: 36px;
+}
+
+.experience-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-icon svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover .experience-icon svg {
+  transform: scale(1.1);
+}
+
+.experience-content h3 {
+  font-size: 16px;
+  color: #39ACFF;
+  margin-bottom: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.experience-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.timeline-divider-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  width: 36px;
+  height: 30px;
+}
+
+.timeline-divider {
+  width: 12px;
+  height: 100%;
+  border-left: 2px solid #39ACFF;
+  border-right: 2px solid #39ACFF;
+}
+
+/* Секция Проекты для мобильных */
+.projects {
+  padding: 40px 0;
+  width: 100%;
+  background: #0B111A;
+}
+
+.projects h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #39ACFF;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0 20px;
+  margin: 0 -15px;
+  padding-left: 15px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.projects-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.project-item {
+  flex: 0 0 280px;
+  height: 280px;
+  scroll-snap-align: start;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #54a0ff;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Стрелка наверх для мобильных */
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 1000;
+  text-decoration: none;
+  color: #39ACFF;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top.show {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.back-to-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-to-top-star {
+  width: 18px;
+  height: 18px;
+}
+
+.back-to-top-line {
+  width: 2px;
+  height: 25px;
+  background: #39ACFF;
+}
+
+.back-to-top-text {
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}
+
+/* Футер для мобильных */
+.footer {
+  background: #0B111A;
+  padding: 30px 0;
+  border-top: 1px solid rgba(57, 172, 255, 0.2);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column-reverse; /* Правое сверху, левое снизу */
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #39ACFF;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}
+
+.hours {
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #39ACFF;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #39ACFF;
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon:hover svg path {
+  stroke: #0B111A;
+  fill: #0B111A;
+}
+
+
+/* ===== TABLET STYLES (768px+) ===== */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 20px;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  /* Хедер для планшетов */
+  .header {
+    height: 140px;
+    padding: 0;
+  }
+  .hero {
+    min-height: 60vh;
+  }
+  
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+    text-align: left;
+  }
+  
+  .header-border {
+    height: 20px;
+    margin-top: 0;
+  }
+  
+  .nav {
+    gap: 25px;
+    flex-wrap: nowrap;
+  }
+  
+  .nav a {
+    font-size: 18px;
+  }
+  
+  /* Герой для планшетов */
+  .name-text {
+    font-size: 72px;
+  }
+  
+  .welcome-text {
+    font-size: 22px;
+  }
+  
+  .description-text {
+    font-size: 16px;
+  }
+  
+  /* About для планшетов */
+
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about .container {
+    max-width: 720px;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0;
+  }
+  
+  .about-text {
+    text-align: left;
+    max-width: 50%;
+  }
+  
+  .about-text h2 {
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    height: 350px;
+    max-height: 350px;
+    max-width: 45%;
+    flex: 0 0 45%;
+    margin: 0;
+  }
+  
+  /* Illustrations для планшетов */
+  .illustrations {
+    padding: 60px 0;
+  }
+  
+  .illustrations h2 {
+    font-size: 48px;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 320px;
+    height: 320px;
+  }
+  
+  /* Опыт для планшетов */
+  .experience {
+    padding: 60px 0;
+  }
+  
+  .experience h2 {
+    font-size: 48px;
+  }
+  
+  .experience-timeline {
+    align-items: flex-start;
+    max-width: 600px;
+    margin: 0 auto; /* Центрируем только на планшетах */
+  }
+  
+  .experience-item {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+  
+  .experience-left {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .experience-content h3 {
+    font-size: 20px;
+  }
+  
+  .experience-content p {
+    font-size: 16px;
+  }
+  
+  .timeline-divider-wrapper {
+    width: 44px;
+    height: 40px;
+  }
+  
+  .timeline-divider {
+    width: 15px;
+  }
+  
+  /* Проекты для планшетов */
+  .projects {
+    padding: 60px 0;
+  }
+  
+  .projects h2 {
+    font-size: 48px;
+  }
+  
+  .projects-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    margin: 0;
+    padding-left: 0;
+    gap: 30px;
+  }
+  
+  .project-item {
+    flex: 0 0 calc(50% - 15px);
+    height: 300px;
+  }
+  
+  /* Стрелка для планшетов */
+  .back-to-top {
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .back-to-top-star {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .back-to-top-line {
+    width: 3px;
+    height: 30px;
+  }
+  
+  .back-to-top-text {
+    font-size: 16px;
+  }
+  
+  /* Футер для планшетов */
+  .footer-content {
+    flex-direction: row; /* Возвращаем обычное направление */
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .footer-left {
+    align-items: flex-start;
+  }
+  
+  .copyright {
+    font-size: 15px;
+  }
+  
+  .hours {
+    font-size: 13px;
+  }
+  
+  .social-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+}
+  
+
+
+/* ===== DESKTOP STYLES (1200px+) ===== */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  /* Хедер для десктопа */
+  .nav {
+    gap: 30px;
+  }
+  
+  .nav a {
+    font-size: 20px;
+  }
+  
+  /* Герой для десктопа */
+  .name-text {
+    font-size: 112px;
+  }
+  
+  .welcome-text {
+    font-size: 24px;
+  }
+  
+  .description-text {
+    font-size: 18px;
+  }
+  
+  .hero {
+    min-height: 90vh;
+  }
+  
+  /* About для десктопа - ИСПРАВЛЕННАЯ ВЕРСИЯ */
+  .about {
+    max-height: 840px;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 0; /* Убираем padding */
+  }
+  
+  .about .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .about-border {
+    height: 20px;
+    width: 100%;
+    border-top: 2px solid #39ACFF;
+    border-bottom: 2px solid #39ACFF;
+    background: transparent;
+    margin: 40px 0; /* Добавляем отступы */
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    margin: 40px 0;
+    width: 100%;
+    min-height: 400px;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-text h2 {
+    font-size: 72px;
+    margin-bottom: 56px;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #39ACFF;
+    text-align: left; /* Явно указываем выравнивание */
+  }
+  
+  .about-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    text-align: left; /* Явно указываем выравнивание */
+  }
+  
+  .about-image {
+    flex: 0 0 480px; 
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-width: 480px; 
+    overflow: hidden;
+    background-color: #8FD0FF;
+    margin: 0;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Остальные стили для десктопа */
+  /* Illustrations для десктопа */
+  .illustrations {
+    padding: 80px 0;
+  }
+  
+  .illustrations h2 {
+    font-size: 72px;
+    margin-bottom: 60px;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 560px;
+    height: 560px;
+  }
+  
+  .carousel-slide:hover {
+    transform: translateY(-20px);
+  }
+  
+  /* Опыт для десктопа */
+  .experience {
+    padding: 80px 0;
+    min-height: 720px;
+  }
+  
+  .experience h2 {
+    font-size: 72px;
+    margin-bottom: 80px;
+  }
+  
+  .experience-timeline {
+    max-width: none;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .experience-item {
+    gap: 32px;
+  }
+  
+  .experience-left {
+    width: 54px;
+    height: 54px;
+  }
+  
+  .experience-content h3 {
+    font-size: 24px;
+  }
+  
+  .experience-content p {
+    font-size: 18px;
+  }
+  
+  .timeline-divider-wrapper {
+    width: 54px;
+    height: 60px;
+  }
+  
+  .timeline-divider {
+    width: 20px;
+  }
+  
+  /* Проекты для десктопа */
+  .projects {
+    padding: 80px 0;
+  }
+  
+  .projects h2 {
+    font-size: 72px;
+    margin-bottom: 60px;
+  }
+  
+  .project-item {
+    flex: 0 0 calc(50% - 15px);
+    height: 400px;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+  
+  /* Стрелка для десктопа */
+  .back-to-top {
+    right: 40px;
+    bottom: 40px;
+  }
+  
+  .back-to-top-star {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .back-to-top-line {
+    height: 40px;
+  }
+  
+  .back-to-top-text {
+    font-size: 20px;
+  }
+  
+  /* Футер для десктопа */
+  .footer {
+    padding: 40px 0;
+  }
+  
+  .copyright {
+    font-size: 16px;
+  }
+  
+  .hours {
+    font-size: 14px;
+  }
+  
+  .social-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .social-icon svg {
+    width: 44px;
+    height: 44px;
+  }
+
+}
+
+/* ===== LARGE DESKTOP STYLES (1920px+) ===== */
+@media (min-width: 1920px) {
+  .carousel-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
